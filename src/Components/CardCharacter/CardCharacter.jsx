@@ -1,22 +1,24 @@
 
 import * as React from 'react';
-  import Card from '@mui/material/Card';
-  import CardActions from '@mui/material/CardActions';
-  import CardContent from '@mui/material/CardContent';
-  import CardMedia from '@mui/material/CardMedia';
-  import Button from '@mui/material/Button';
-  import Typography from '@mui/material/Typography';
-  import './CardCharacter.css'
-  import backImage from '../../img/blob-haikei(1).svg'
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import './CardCharacter.css'
+import backImage from '../../img/blob-haikei(1).svg'
+import { Link } from 'react-router-dom';
 
-const CardCharacter = ({item}) => {
-    return (
-      <div className='cardContainer' data-aos="fade-up" data-aos-duration="1000">
+const CardCharacter = ({ item }) => {
+  return (
+    <div className='cardContainer' data-aos="fade-up" data-aos-duration="1000">
+      <Link to={`/character/${item.id}`} className='link'>
         <div className='imageContainer'>
-          <img className='image' src={item.image} alt="imageCaracter"  />
+          <img className='image' src={item.image} alt="imageCaracter" />
         </div>
         <div className='backContainer'>
-          <img className='imgBack' src={backImage}/>
+          <img className='imgBack' src={backImage} />
         </div>
         <Card className='contentContainer' sx={{ width: 345 }}>
           <CardContent>
@@ -25,7 +27,7 @@ const CardCharacter = ({item}) => {
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
               <h2>{item.race} - {item.gender}</h2>
-              <br/>
+              <br />
               <h3>Afiliación {item.affiliation}</h3>
 
             </Typography>
@@ -35,8 +37,9 @@ const CardCharacter = ({item}) => {
             <Button size="small">Learn More</Button>
           </CardActions>
         </Card>
-      </div>
-    );
+      </Link>
+    </div>
+  );
 }
 
 export default CardCharacter;
