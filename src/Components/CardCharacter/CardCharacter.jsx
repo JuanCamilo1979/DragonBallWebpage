@@ -7,6 +7,7 @@ import * as React from 'react';
   import Button from '@mui/material/Button';
   import Typography from '@mui/material/Typography';
   import './CardCharacter.css'
+  import backImage from '../../img/blob-haikei(1).svg'
 
 const CardCharacter = ({item}) => {
     return (
@@ -15,7 +16,7 @@ const CardCharacter = ({item}) => {
           <img className='image' src={item.image} alt="imageCaracter"  />
         </div>
         <div className='backContainer'>
-          <img className='imgBack' src='src\img\blob-haikei(1).svg'/>
+          <img className='imgBack' src={backImage}/>
         </div>
         <Card className='contentContainer' sx={{ width: 345 }}>
           <CardContent>
