@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+  }
+  
+  .flex{
+    display: flex;
+    gap: 0;
+  }
+  
+  .content{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    background-color: #121212;
+    width: calc(100% - 20vw);
+  }
+  
+  .asideContainer{
+    position: sticky;
+    top: 0;
+    
+    width: 20vw;
+    height: 100vh;  
+  }
+  
+  .item{
+    background-color: #b12121;
+    height: 150vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .section::after{
+    background: url("https://lacremamalta.com/wp-content/themes/lacrema/static/images/pg-spacer-1.svg") no-repeat center right/contain;
+  }
+
+.icon{
+  font-size: 35rem;
+}
+  

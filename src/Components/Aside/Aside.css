@@ -1,0 +1,25 @@
+.asideContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background-color: #121212;
+    color: #B0B0B0;
+}
+
+.linkActive {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    
+
+    align-items: center;
+    font-size: 1.7rem;
+
+}
+
+.icon{
+    font-size: large;
+}

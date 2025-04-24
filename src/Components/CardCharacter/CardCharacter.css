@@ -1,0 +1,47 @@
+
+
+.imageContainer{
+    padding: 4px;
+    position: absolute;
+    margin-top: -40px;
+    width: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+    :hover{
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.image{
+    max-width: 345px;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+
+.backContainer{ 
+    margin-top: 200px;
+    width: 360px;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+
+.imgBack{
+    max-width: 600px;
+    max-height: auto;
+    object-fit: scale-down;
+    margin-left: -130px;
+}
+
+.contentContainer{
+    position: relative;
+    z-index: 2;
+    margin-top: -150px;
+}

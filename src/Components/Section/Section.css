@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    height: 15rem;
+    color: aliceblue;
+
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+
+    
+}
+
+.titleContainer .space{
+    width: 1rem;
+}
+
+.itemsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+    row-gap: 100px;
+    padding: 50px;
+}
+
+
+.sepContainer {
+
+    width: 100vw;
+    /* Full viewport width */
+    overflow: hidden;
+    /* Hide any overflow */
+    position: relative;
+    /* Useful if you want to position it later */
+    z-index: 1;
+    margin-left: -20vw;
+    left: 0;
+
+    img {
+        width: 100%;
+        /* Full container width */
+        height: auto;
+        /* Keep original aspect ratio */
+        display: block;
+    }
+
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
