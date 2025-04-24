@@ -38,7 +38,7 @@ const Nav = () => {
       {/* Botón para abrir el Drawer */}
       <IconButton
         onClick={toggleDrawer(true)}
-        className='open-drawer-button'
+        className='open-drawer-button' 
       >
         <MenuIcon fontSize="large" />
       </IconButton>

@@ -1,8 +1,8 @@
 .open-drawer-button {
-    position: fixed;
+    position: fixed !important;
     top: 30px;
     right: 20px;
     z-index: 30;  /*Por debajo del drawer*/
-    color: white;
+    color: white !important;
     
 }

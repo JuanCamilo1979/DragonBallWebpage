@@ -27,7 +27,7 @@ const App = () => {
             <Route path="men" element={<Masculino />} />
             <Route path="female" element={<Femenino />} />
             <Route path="character/:id" element={<CharacterDetail />} />
-            <Route path="*" element={<NotFound />} /> {/* <- Ruta por defecto */}
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Router>
