@@ -1,6 +1,4 @@
-
-
-.imageContainer{
+.imageContainer {
     padding: 4px;
     position: absolute;
     margin-top: -40px;
@@ -10,20 +8,26 @@
     align-items: center;
     z-index: 3;
 
-    :hover{
+    &:hover {
         transform: scale(1.2);
         transition: all 0.3s ease-in-out;
     }
 }
 
-.image{
+.image {
     max-width: 345px;
     max-height: 500px;
     object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+    transition: filter 0.3s ease;
+
+    &:hover {
+        filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.9));
+    }
 }
 
 
-.backContainer{ 
+.backContainer {
     margin-top: 200px;
     width: 360px;
     height: auto;
@@ -33,15 +37,17 @@
 }
 
 
-.imgBack{
+.imgBack {
     max-width: 600px;
     max-height: auto;
     object-fit: scale-down;
     margin-left: -130px;
 }
 
-.contentContainer{
+.contentContainer {
     position: relative;
     z-index: 2;
     margin-top: -150px;
+    box-shadow: 0 8px 45px rgba(0, 0, 0, 0.7) !important;
+    padding: 50px 70px;
 }

@@ -38,7 +38,7 @@ const Femenino = () => {
     return groups;
   }
 
-  const groups = splitIntoGroups(characters, 6);
+  const groups = splitIntoGroups(characters, 1);
   console.log(groups);
 
 
@@ -59,15 +59,11 @@ const Femenino = () => {
       <div className="flex">
 
         {/* Sidebar */}
-        <Aside className='asideContainer' numberOfSections={6} />
+        <Aside className='asideContainer' numberOfSections={1} />
 
         {/* Scrollable content */}
         <div className='content'>
           <Section idSection={1} array={groups[0]} className='section' />
-          <Section idSection={2} array={groups[1]} className='section' />
-          <Section idSection={3} array={groups[2]} className='section' />
-          <Section idSection={4} array={groups[3]} className='section' />
-          <Section idSection={5} array={groups[4]} className='section' />
 
         </div>
       </div>

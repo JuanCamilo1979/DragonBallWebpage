@@ -29,13 +29,8 @@ const CardCharacter = ({ item }) => {
               <h2>{item.race} - {item.gender}</h2>
               <br />
               <h3>Afiliación {item.affiliation}</h3>
-
             </Typography>
           </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
         </Card>
       </Link>
     </div>

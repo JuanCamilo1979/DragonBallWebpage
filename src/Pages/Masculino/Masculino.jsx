@@ -38,7 +38,7 @@ const Masculino = () => {
     return groups;
   }
 
-  const groups = splitIntoGroups(characters, 6);
+  const groups = splitIntoGroups(characters, 5);
   console.log(groups);
 
   return (
@@ -58,7 +58,7 @@ const Masculino = () => {
       <div className="flex">
 
         {/* Sidebar */}
-        <Aside className='asideContainer' numberOfSections={6} />
+        <Aside className='asideContainer' numberOfSections={5} />
 
         {/* Scrollable content */}
         <div className='content'>
