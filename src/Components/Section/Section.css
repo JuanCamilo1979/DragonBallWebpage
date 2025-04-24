@@ -54,6 +54,13 @@
 
 }
 
+@media (max-width:768px) {
+    .titleContainer {
+        font-size: 3.3rem;
+
+    }
+
+}
 
 @keyframes typing {
     from {

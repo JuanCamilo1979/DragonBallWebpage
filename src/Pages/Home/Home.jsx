@@ -68,6 +68,8 @@ const Home = () => {
 
         <div className="intro-text">
           <h1>Bienvenido al Universo de Dragon Ball</h1>
+          <br />
+          <br />
           <p>Explora los personajes, sus historias y las batallas que moldearon el destino del universo.</p>
           <p>Elige entre <strong>Hombres</strong>, <strong>Mujeres</strong> o <strong>Todos los personajes</strong> y sumérgete en el mundo de los Super Saiyajin, Namekianos y más.</p>
         </div>

@@ -32,7 +32,7 @@ const Aside = ({ numberOfSections }) => {
                      offset={-20}
                      onSetActive={() => setActiveIndex(index)}>
                         {activeIndex === index? 
-                        (<p className='linkActive'>Section {icons[index % icons.length]}</p>):
+                        (<p className='linkActive'><span className='word'>Section</span> {icons[index % icons.length]}</p>):
                         (icons[index % icons.length])
                         }
                         
