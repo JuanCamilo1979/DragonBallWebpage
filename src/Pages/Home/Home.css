@@ -66,18 +66,30 @@
 
 .intro-text{
   position: absolute;
-  font-size: 1.3rem;
-  color: #e4e3e3;
   text-align: center;
   align-items: center;
   width: 50%;
   text-align: left;
+  text-shadow: #121212 12px;
 
 
   h1{
     color: white;
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 900;
+  }
+
+  h2{
+    font-size: 1.7rem;
+    font-weight: 750;
+    font-style: italic;
+    color: white;
+  }
+
+  p{
+    font-size: 1.2rem;
+    font-weight: 380;
+    color: white;
   }
 }
 

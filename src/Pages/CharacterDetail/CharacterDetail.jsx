@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './CharacterDetail.css';
 import { useParams } from 'react-router-dom';
+import Transformation from '../../Components/Transformation/Transformation';
 
 
 
@@ -12,11 +13,11 @@ const CharacterDetail = () => {
     useEffect(() => {
         fetch(URL)
             .then(response => response.json())
-            .then(data => {setCharacter(data); console.log(data)})
+            .then(data => { setCharacter(data); console.log(data) })
             .catch(() => console.log("Oyasumi Okasan"))
         console.log(character);
-        
-        
+
+
     }, [])
 
     console.log(character);
@@ -24,21 +25,29 @@ const CharacterDetail = () => {
     return (
         <div className="character-detail">
             <div className="header">
-                <img src={character.image} alt={character.name} className="character-image" />
-                <div className="info">
+                <div className='nameCharacter'>
                     <h1>{character.name}</h1>
+                    <div className='imgCharacter'>
+                        <img src={character.image} alt={character.name}/> // imagen
+                    </div>
+
+                </div>
+
+                <div className="info">
+                    <h2>Character Information</h2>
                     <p><strong>Race:</strong> {character.race}</p>
                     <p><strong>Gender:</strong> {character.gender}</p>
                     <p><strong>Ki:</strong> {character.ki}</p>
                     <p><strong>Max Ki:</strong> {character.maxKi}</p>
                     <p><strong>Affiliation:</strong> {character.affiliation}</p>
                 </div>
+                <section className="description">
+                    <h2>Description</h2>
+                    <p>{character.description}</p>
+                </section>
             </div>
 
-            <section className="description">
-                <h2>Description</h2>
-                <p>{character.description}</p>
-            </section>
+
 
             <section className="planet">
                 <h2>Origin Planet: {character.originPlanet.name}</h2>
@@ -50,11 +59,7 @@ const CharacterDetail = () => {
                 <h2>Transformations</h2>
                 <div className="transformation-list">
                     {character.transformations.map((transformation) => (
-                        <div key={transformation.id} className="transformation-card">
-                            <img src={transformation.image} alt={transformation.name} />
-                            <h4>{transformation.name}</h4>
-                            <p><strong>Ki:</strong> {transformation.ki}</p>
-                        </div>
+                        <Transformation char={transformation} key={transformation.id} /> // Componente de transformación
                     ))}
                 </div>
             </section>
