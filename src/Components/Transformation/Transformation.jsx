@@ -1,9 +1,11 @@
 import React from 'react'
 import './Transformation.css';
 
-const Transformation = ({ char }) => {
+const Transformation = ({ char, colorBx}) => {
+  const dinamicClass = `carTransformationContainer ${colorBx}`;
+  console.log(dinamicClass);
   return (
-    <div className='carTransformationContainer'>
+    <div className={dinamicClass}>
       <div className='carTransformationText'>
         <div className='textTransformation'>
           <h1>{char.name}</h1>

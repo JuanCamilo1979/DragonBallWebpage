@@ -2,7 +2,7 @@
     width: 30vw;
     max-width: 789px;
     padding: 50px;
-    background-color: violet;
+    
     display: flex;
     flex-flow: column-reverse wrap;
     justify-content: center;
@@ -10,12 +10,23 @@
 
 .carTransformationImageContainer {
     width: 70vw;
-    max-width: 789px;
+    display: flex;
     padding: 100px;
+    justify-content: center;
+    align-items: center;
 
     img {
-        height: 45px;
+        height: 70vh;
         object-fit: contain;
+        object-position: center;
+
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+        transition: filter 0.3s ease;
+
+        /* add a shadow to the image */
+        &:hover {
+            filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.9));
+        }
     }
 }
 
@@ -23,12 +34,10 @@
     display: flex;
     flex-flow: row wrap;
     overflow: hidden;
-    height: 50vh;
+    
 }
 
 .textTransformation {
-
-    background-color: aqua;
     word-wrap: break-word;
 
     h1 {
@@ -45,5 +54,21 @@
 
     p{
         line-height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carTransformationContainer{
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .carTransformationText{
+        width: 100vw;
+    }
+
+    .carTransformationImageContainer{
+        width: 100vw;
     }
 }

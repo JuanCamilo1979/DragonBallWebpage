@@ -51,11 +51,11 @@
     box-shadow: 0 8px 45px rgba(0, 0, 0, 0.7) !important;
     padding: 50px 70px;
 
-    h5{
+    h5 {
         font-weight: 600;
     }
 }
 
-.link{
+.link {
     text-decoration: none;
 }
