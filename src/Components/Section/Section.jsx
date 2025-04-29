@@ -16,7 +16,7 @@ const Section = ({ idSection, array }) => {
             </div>
             <div className='titleContainer'>
                 
-                {`Seccion  ${idSection} `.split("").map((letter, i) => (
+                {`Sección  ${idSection} `.split("").map((letter, i) => (
                     <span key={i} data-aos="fade-up" data-aos-delay={i * 100}>
                         {letter === " " ? '\u00A0' : letter}
                     </span>

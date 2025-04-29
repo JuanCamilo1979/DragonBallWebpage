@@ -36,17 +36,22 @@ const CharacterDetail = () => {
                 </div>
 
                 <div className="infoCharacter">
-                    <h2>Character Information</h2>
-                    <p><strong>Race:</strong> {character.race}</p>
-                    <p><strong>Gender:</strong> {character.gender}</p>
+                    <h2>Información del Personaje</h2>
+                    <br />
+                    <br />
+                    <p><strong>Raza: </strong> {character.race}</p>
+                    <p><strong>Género</strong> {character.gender}</p>
                     <p><strong>Ki:</strong> {character.ki}</p>
                     <p><strong>Max Ki:</strong> {character.maxKi}</p>
-                    <p><strong>Affiliation:</strong> {character.affiliation}</p>
+                    <p><strong>Afiliación:</strong> {character.affiliation}</p>
                 </div>
-                <section className="desCharacter">
-                    <h2>Description</h2>
+
+                <div className="desCharacter">
+                    <h2>Descripción</h2>
+                    <br />
+                    <br />
                     <p>{character.description}</p>
-                </section>
+                </div>
             </div>
 
             <div className="planet">
@@ -56,20 +61,24 @@ const CharacterDetail = () => {
                 </div>
 
                 <div className='textDescPlanet'>
-                    <h2>Origin Planet: {character.originPlanet.name}</h2>
+                    <h2>Planeta de origen: {character.originPlanet.name}</h2>
+                    <br />
                     <p>{character.originPlanet.description}</p>
                 </div>
 
             </div>
 
-            <section className="transformations">
-                <h2>Transformations</h2>
-                <div className="transformation-list">
-                    {character.transformations.map((transformation, index) => (
-                        <Transformation char={transformation} key={transformation.id} colorBx={colors[index % colors.length]}/> // Componente de transformación
-                    ))}
-                </div>
-            </section>
+            {character.transformations.length > 0 &&
+                <section className="transformations">
+                    <h2>Transformaciones</h2>
+                    <div className="transformation-list">
+                        {character.transformations.map((transformation, index) => (
+                            <Transformation char={transformation} key={transformation.id} colorBx={colors[index % colors.length]} /> // Componente de transformación
+                        ))}
+                    </div>
+                </section>
+            }
+
         </div>
     );
 };

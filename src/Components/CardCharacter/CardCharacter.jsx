@@ -22,10 +22,9 @@ const CardCharacter = ({ item }) => {
         </div>
         <Card className='contentContainer' sx={{ width: 345 }}>
           <CardContent>
-            <Typography gutterBottom variant="h4" component="div">
-              {item.name}
-            </Typography>
+
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              <h1>{item.name}</h1>
               <h2>{item.race} - {item.gender}</h2>
               <br />
               <h3>Afiliación {item.affiliation}</h3>

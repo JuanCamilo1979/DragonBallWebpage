@@ -84,12 +84,17 @@ const Nav = () => {
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton onClick={() => handleNavigation('/men')}>
-                <ListItemText primary="Men" />
+                <ListItemText primary="Masculinos" />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton onClick={() => handleNavigation('/female')}>
-                <ListItemText primary="Female" />
+                <ListItemText primary="Femeninos" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton onClick={() => handleNavigation('/about')}>
+                <ListItemText primary="Acerca" />
               </ListItemButton>
             </ListItem>
           </List>

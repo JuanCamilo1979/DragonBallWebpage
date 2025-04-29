@@ -90,6 +90,14 @@
 
 }
 
+.transformations > h2 {
+
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    padding: 10vw;
+}
+
 @media (max-width: 768px) {
 
     /* phone size */
@@ -98,7 +106,7 @@
         /* remove absolute */
         background: none;
         /* optional: remove background on mobile */
-        color: black;
+        color: white;
         /* optional: change text color on mobile */
         padding: 30px;
         width: 80vw;
