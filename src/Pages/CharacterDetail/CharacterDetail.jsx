@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './CharacterDetail.css';
 import { useParams } from 'react-router-dom';
 import Transformation from '../../Components/Transformation/Transformation';
+import Footer from '../../Components/Footer/Footer';
 
 const colors = ['amarillo', 'azul', 'rojo', 'naranja', 'verde', 'morado', 'rosa', 'blanco'];
 
@@ -78,7 +79,7 @@ const CharacterDetail = () => {
                     </div>
                 </section>
             }
-
+            <Footer/>
         </div>
     );
 };

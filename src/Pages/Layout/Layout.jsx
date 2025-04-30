@@ -6,7 +6,7 @@ import './Layout.css';
 const Layout = () => {
     return (
         <>
-            <Nav />
+            <Nav/>
             <main>
                 <Outlet/>
             </main>

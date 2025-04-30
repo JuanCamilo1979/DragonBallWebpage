@@ -143,6 +143,7 @@
     }
 
     .nameCharacter {
+        width: 100vw;
         display: grid;
         grid-template-areas: "name" "imgCharacter";
         align-items: center;
@@ -151,17 +152,19 @@
     }
 
     .name {
+        margin: 0;
         grid-area: name;
-        padding: 30px 50px 30px 50px;
+        padding: 30px 30px 30px 30px;
         background-color: brown;
     }
 
     .imgCharacter {
         justify-content: center;
-
+        margin: 0;
         align-items: center;
         grid-area: imgCharacter;
-        margin: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
     }
 }
@@ -232,7 +235,8 @@
 
     .nameCharacter {
         grid-area: nameCharacter;
-        padding: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
 

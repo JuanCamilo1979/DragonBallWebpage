@@ -1,0 +1,16 @@
+.footerContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    padding: 5vw 10vw;
+
+    color: aliceblue;
+
+}
+
+.footerIcon{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;    
+    padding-left: 34px;
+}

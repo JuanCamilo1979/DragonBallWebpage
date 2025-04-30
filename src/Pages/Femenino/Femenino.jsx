@@ -9,6 +9,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import dragonBall from '../../img/klipartz.com(1).png'
+import Footer from '../../Components/Footer/Footer';
 
 
 
@@ -69,14 +70,7 @@ const Femenino = () => {
         </div>
       </div>
 
-      <div className='footer'>
-        <h1 className='title'>Mi Aplicación</h1>
-        <h1 className='title'>Mi Aplicación</h1>
-        <h1 className='title'>Mi Aplicación</h1>
-        <h1 className='title'>Mi Aplicación</h1>
-        <h1 className='title'>Mi Aplicación</h1>
-        <h1 className='title'>Mi Aplicación</h1>
-      </div>
+      <Footer/>
     </>
 
   );

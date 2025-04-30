@@ -61,7 +61,7 @@ const Nav = () => {
         {/* Botón de cierre */}
         <IconButton
           onClick={toggleDrawer(false)}
-          sx={{ position: 'absolute', top: 16, right: 16, color: 'white' }}
+          className='close-drawer-button'
         >
           <CloseIcon fontSize="large" />
         </IconButton>
@@ -69,7 +69,7 @@ const Nav = () => {
         {/* Lista de navegación */}
         <Box
           sx={{
-            height: '100%',
+            height: '100vw',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',

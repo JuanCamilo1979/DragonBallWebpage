@@ -2,7 +2,29 @@
     position: fixed !important;
     top: 30px;
     right: 20px;
-    z-index: 30;  /*Por debajo del drawer*/
+    z-index: 30;
+    /*Por debajo del drawer*/
     color: white !important;
-    
+
+}
+
+.close-drawer-button {
+    position: absolute !important;
+    top: 30px;
+    right: 20px;
+    /*Por debajo del drawer*/
+    color: white !important;
+
+}
+
+.full-screen-drawer {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+
+    z-index: 1301;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    color: white,
 }
