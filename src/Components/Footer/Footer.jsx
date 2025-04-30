@@ -4,16 +4,19 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className='footerContainer'>
-            <div>
-                <h1>Seguí el proyecto en GitHub</h1>
-                <p>Proyecto creado con React y la ayuda de otras librerías para añadir animación</p>
-            </div>
-            <div className='footerIcon'>
-                <GitHubIcon className='githubIcon' fontSize='340' />
-            </div>
+        <a href="https://github.com/JuanCamilo1979/DragonBallWebpage" target="_blank" rel="noopener noreferrer">
+            <div className='footerContainer'>
 
-        </div>
+                <div>
+                    <h1>Seguí el proyecto en GitHub</h1>
+                    <p>Proyecto creado con React y la ayuda de otras librerías para añadir animación</p>
+                </div>
+                <div className='footerIcon'>
+                    <GitHubIcon className='githubIcon' fontSize='340' />
+                </div>
+
+            </div>
+        </a>
 
     )
 }

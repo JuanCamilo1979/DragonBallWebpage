@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    color: #B0B0B0;
+}
+
 .footerContainer{
     display: flex;
     flex-flow: row wrap;
