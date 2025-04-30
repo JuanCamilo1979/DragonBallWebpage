@@ -4,8 +4,12 @@
     justify-items: center;
     padding: 5vw 10vw;
 
-    color: aliceblue;
+    background-color: #121212;
+    color: #B0B0B0;
 
+    h1{
+        color: white;
+    }
 }
 
 .footerIcon{
@@ -13,4 +17,6 @@
     justify-content: center;
     font-size: 4rem;    
     padding-left: 34px;
+
+
 }

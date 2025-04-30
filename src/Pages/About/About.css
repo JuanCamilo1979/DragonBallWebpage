@@ -1,0 +1,235 @@
+.aboutContainer {
+    background-color: #121212;
+}
+
+.titleAbout {
+    width: 80vw;
+
+
+    .name {
+
+        background-color: rgb(209, 209, 209);
+    }
+
+    .name h1 {
+        text-wrap: break-word;
+        font-size: 5rem;
+        font-weight: 800;
+        overflow: hidden;
+    }
+
+
+    .imgAbout {
+        background-color: rgb(209, 209, 209);
+    }
+}
+
+.imgAbout {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* zoom and crop nicely */
+        object-position: top center;
+        /* adjust if needed to show the head */
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+        transition: filter 0.3s ease;
+    }
+}
+
+.cityImg {
+    width: 100%;
+    /* container stretches to screen size */
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        /* make sure it covers the container */
+        object-position: bottom;
+        /* always focus the center */
+        display: block;
+    }
+}
+
+.city {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    /* make sure the text is on top of the image */
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textDesCity {
+    position: absolute;
+
+    width: 80vw;
+    bottom: 20px;
+    /* you can adjust */
+    left: 10vw;
+    right: 20px;
+    /* you can adjust */
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    /* semi-transparent background */
+    padding: 30px;
+
+}
+
+@media (max-width: 768px) {
+
+    /* phone size */
+    .textDesCity {
+        position: relative;
+        /* remove absolute */
+        background: none;
+        /* optional: remove background on mobile */
+        color: white;
+        /* optional: change text color on mobile */
+        padding: 30px;
+        width: 80vw;
+        left: 10vw;
+        top: 2vh;
+        margin-bottom: 4vh;
+    }
+}
+
+@media (min-width: 1248px) {
+
+    .titleAbout {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .name {
+        width: 70%;
+        height: 200px;
+        padding: 30px 50px 30px 50px;
+        background-color: blueviolet;
+    }
+
+    .imgAbout {
+        margin-left: -150px;
+    }
+
+}
+
+@media (max-width: 1248px) {
+    .headerAbout {
+        justify-items: center;
+    }
+
+    .titleAbout {
+        width: 100vw;
+        display: grid;
+        grid-template-areas: "name" "imgCharacter";
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    .name {
+        margin: 0;
+        grid-area: name;
+        padding: 30px 30px 30px 30px;
+        background-color: brown;
+    }
+
+    .imgAbout {
+        justify-content: center;
+        margin: 0;
+        align-items: center;
+        grid-area: imgCharacter;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+}
+
+@media (min-width: 810px) {
+    .headerAbout{
+        display: grid;
+        grid-template-areas:
+            "nameCharacter nameCharacter"
+            "desCharacter infoCharacter";
+        grid-template-columns: 60% 40%;
+
+    }
+
+
+    .desPersonal {
+        grid-area: desCharacter;
+        padding: 50px;
+        background-color: #1E1E2F;
+        color: #F1F5F9;
+        margin-left: 10vw;
+    }
+
+    .infoPersonal {
+        grid-area: infoCharacter;
+        padding: 50px;
+        color: #F1F5F9;
+        margin-right: 10vw;
+    }
+
+    .titleAbout {
+        grid-area: nameCharacter;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+}
+
+@media (max-width: 810px) {
+    .headerAbout {
+        display: grid;
+        grid-template-areas:
+            "nameCharacter"
+            "infoCharacter"
+            "desCharacter";
+
+
+    }
+
+
+    .desPersonal {
+        grid-area: desCharacter;
+        padding: 50px;
+        background-color: #1E1E2F;
+        color: #F1F5F9;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .infoPersonal {
+        grid-area: infoCharacter;
+        padding: 50px;
+        background-color: #1E1E2F;
+        color: #F1F5F9;
+        width: calc(100% - 20vw);
+    }
+
+    .titleAbout {
+        grid-area: nameCharacter;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+}

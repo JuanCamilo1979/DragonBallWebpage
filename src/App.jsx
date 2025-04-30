@@ -12,6 +12,7 @@ import Masculino from "./Pages/Masculino/Masculino";
 import Femenino from "./Pages/Femenino/Femenino";
 import CharacterDetail from "./Pages/CharacterDetail/CharacterDetail";
 import NotFound from "./Pages/NotFound/NotFound";
+import About from './Pages/About/About';
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="men" element={<Masculino />} />
             <Route path="female" element={<Femenino />} />
             <Route path="character/:id" element={<CharacterDetail />} />
+            <Route path="about" element={<About/>} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

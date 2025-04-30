@@ -21,7 +21,7 @@ const CharacterDetail = () => {
 
     }, [])
 
-    console.log(character);
+    
     if (character == null) return <p>Loading...</p>;
     return (
         <div className="character-detail">
